@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d03icu8fmqonh"]
+[gd_scene load_steps=5 format=3 uid="uid://d03icu8fmqonh"]
 
 [ext_resource type="Script" uid="uid://befjvqkg8b48t" path="res://scripts/text_guesser.gd" id="1_0sxow"]
 [ext_resource type="Theme" uid="uid://bgak8h42a8hrb" path="res://themes/topic_label.tres" id="2_7ft1f"]
 [ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="3_tl2f3"]
-[ext_resource type="Texture2D" uid="uid://b24xgon6sair7" path="res://data/pictures/samplepic.png" id="4_gnjyr"]
 [ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="5_u8nur"]
 
 [node name="TextGuesser" type="Control"]
@@ -70,13 +69,13 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-texture = ExtResource("4_gnjyr")
 stretch_mode = 5
 
 [node name="AnswerLabel" type="Label" parent="Answer"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+horizontal_alignment = 1
 
 [node name="Show" type="CheckButton" parent="."]
 layout_mode = 1

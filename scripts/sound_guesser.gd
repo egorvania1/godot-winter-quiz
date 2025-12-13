@@ -1,6 +1,6 @@
 extends "res://scripts/generic_guesser.gd"
 
-var soundPath
+var soundPath = "res://data/pictures/GhostDance.ogg"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

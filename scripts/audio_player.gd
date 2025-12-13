@@ -7,7 +7,7 @@ extends HBoxContainer
 var curPosition = 0.0
 var startPosition = 0.0
 var endPosition = 100.0
-var audioPath
+var audioPath = "res://data/pictures/GhostDance.ogg"
 
 var isDragged: bool = false
 

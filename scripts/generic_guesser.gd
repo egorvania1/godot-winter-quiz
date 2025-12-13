@@ -1,10 +1,10 @@
 extends Control
 
 var questionType
-var questionName
-var questionDifficulty
-var answerPicPath
-var answer
+var questionName = "This is a name"
+var questionDifficulty = "This is difficulty"
+var answerPicPath = "res://data/pictures/AnswerPic.png"
+var answer = "Here is the answer"
 
 @onready var questionGroup = $Question
 @onready var answerGroup = $Answer
@@ -14,7 +14,8 @@ func _ready() -> void:
 	$Header/Topic.text = questionName
 	$Header/Difficulty.text = questionDifficulty
 	var answerImage = Image.load_from_file(answerPicPath)
-	$Answer/AnswerPicture.texture = ImageTexture.create_from_image(answerImage)
+	$Answer/VBoxContainer/AnswerPicture.texture = ImageTexture.create_from_image(answerImage)
+	$Answer/VBoxContainer/AnswerLabel.text = answer
 	
 	$Close.pressed.connect(_on_close_pressed)
 	$Show.toggled.connect(_on_show_toggled)

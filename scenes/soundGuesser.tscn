@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://kkcic87f66oo"]
+
+[ext_resource type="Script" uid="uid://b1b5gnwklm054" path="res://scripts/sound_guesser.gd" id="1_5u8d4"]
+[ext_resource type="Theme" uid="uid://bgak8h42a8hrb" path="res://themes/topic_label.tres" id="2_sisxj"]
+[ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="3_jr3jv"]
+[ext_resource type="Texture2D" uid="uid://b24xgon6sair7" path="res://data/pictures/samplepic.png" id="4_g2xj1"]
+[ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="5_6a6hh"]
+
+[node name="SoundGuesser" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5u8d4")
+
+[node name="Header" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_top = 40.0
+offset_right = 45.0
+offset_bottom = 90.0
+grow_horizontal = 2
+
+[node name="Topic" type="Label" parent="Header"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("2_sisxj")
+text = "Topic name"
+
+[node name="Difficulty" type="Label" parent="Header"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_jr3jv")
+text = "Difficulty"
+
+[node name="Question" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Question"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -13.5
+offset_right = 8.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="Question/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "⏯️"
+
+[node name="SoundProgressBar" type="HSlider" parent="Question/HBoxContainer"]
+custom_minimum_size = Vector2(300, 32)
+layout_mode = 2
+
+[node name="Answer" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Answer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -63.5
+offset_right = 50.0
+offset_bottom = 63.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="AnswerPicture" type="TextureRect" parent="Answer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture = ExtResource("4_g2xj1")
+stretch_mode = 5
+
+[node name="AnswerLabel" type="Label" parent="Answer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Show" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -206.0
+offset_top = -68.0
+offset_right = -40.0
+offset_bottom = -25.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("5_6a6hh")
+text = "Показать"
+
+[node name="Close" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = -68.0
+offset_right = 156.00003
+offset_bottom = -25.0
+grow_vertical = 0
+theme = ExtResource("5_6a6hh")
+text = "Закрыть"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

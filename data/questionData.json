@@ -1,0 +1,26 @@
+{
+  "question1": {
+	"type": "picture",
+	"name": "Откуда скрин",
+	"difficulty": "Чайник",
+	"picturePath": "res://data/pictures/questionpic.jpgquote",
+	"answerPicPath": "res://data/pictures/samplepic.png",
+	"answer": "Старкрафт 2"
+  },
+  "question11": {
+	"type": "picture",
+	"name": "Откуда скрин",
+	"difficulty": "Чайник",
+	"picturePath": "res://data/pictures/samplepic.png",
+	"answerPicPath": "res://data/pictures/samplepic.png",
+	"answer": "Старкрафт 2"
+  },
+  "question16": {
+	"type": "text",
+	"name": "Откуда цитата",
+	"difficulty": "Чайник",
+	"quote": "Задавим их интеллектом",
+	"answerPicPath": "res://data/pictures/samplepic.png",
+	"answer": "Старкрафт 2"
+  }
+}

@@ -1,0 +1,111 @@
+[gd_scene load_steps=5 format=3 uid="uid://oxsyg8te8d3l"]
+
+[ext_resource type="Script" uid="uid://dbrnxmu2kx5sc" path="res://scripts/question_chooser.gd" id="1_7fb15"]
+[ext_resource type="Theme" uid="uid://b0b88ay2e2xwb" path="res://themes/column_margin.tres" id="1_lo5i7"]
+[ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="2_lo5i7"]
+[ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="3_i6fmf"]
+
+[node name="QuestionChooser" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7fb15")
+
+[node name="QuestionGrid" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="QuestionGrid"]
+layout_mode = 2
+theme = ExtResource("1_lo5i7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="QuestionGrid/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Topic" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Откуда песня"
+
+[node name="MarginContainer2" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Question1" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer2"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Чайник
+2"
+
+[node name="MarginContainer3" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Question2" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer3"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Изи
+4"
+
+[node name="MarginContainer4" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Question3" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer4"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Потно
+6"
+
+[node name="MarginContainer5" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Question4" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer5"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Геймер
+8"
+
+[node name="MarginContainer6" type="MarginContainer" parent="QuestionGrid/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_lo5i7")
+
+[node name="Question5" type="Button" parent="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer6"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme = ExtResource("3_i6fmf")
+text = "Нёрд 🤓
+10"
+
+[node name="MarginContainer2" type="MarginContainer" parent="QuestionGrid"]
+layout_mode = 2
+theme = ExtResource("1_lo5i7")
+
+[node name="MarginContainer3" type="MarginContainer" parent="QuestionGrid"]
+layout_mode = 2
+theme = ExtResource("1_lo5i7")
+
+[node name="MarginContainer4" type="MarginContainer" parent="QuestionGrid"]
+layout_mode = 2
+theme = ExtResource("1_lo5i7")
+
+[connection signal="pressed" from="QuestionGrid/MarginContainer/VBoxContainer/MarginContainer2/Question1" to="." method="_on_question_pressed" binds= ["question1"]]

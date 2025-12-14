@@ -18,20 +18,24 @@ func _on_question_pressed(questionName: String) -> void:
 	var questionType = questionData["type"]
 	
 	questionGrid.visible = false
-	var newQuestion = pictureScene.instantiate()
+	var newQuestion
+	
+	match questionType:
+		"sound":
+			newQuestion = soundScene.instantiate()
+			newQuestion.soundPath = questionData["soundPath"]
+		"picture":
+			newQuestion = pictureScene.instantiate()
+			newQuestion.picturePath = questionData["picturePath"]
+		"text":
+			newQuestion = textScene.instantiate()
+			newQuestion.quote = questionData["quote"]
+	
 	newQuestion.questionType = questionData["type"]
 	newQuestion.questionName = questionData["name"]
 	newQuestion.questionDifficulty = questionData["difficulty"]
 	newQuestion.answerPicPath = questionData["answerPicPath"]
 	newQuestion.answer = questionData["answer"]
-	
-	match questionType:
-		"sound":
-			newQuestion.soundPath = questionData["soundPath"]
-		"picture":
-			newQuestion.picturePath = questionData["picturePath"]
-		"text":
-			newQuestion.quote = questionData["quote"]
 	
 	add_child(newQuestion)
 

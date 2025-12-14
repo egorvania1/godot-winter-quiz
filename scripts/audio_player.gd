@@ -7,16 +7,13 @@ extends HBoxContainer
 var curPosition = 0.0
 var startPosition = 0.0
 var endPosition = 100.0
-var audioPath = "res://data/pictures/GhostDance.ogg"
+var audioPath = "res://data/sample/GhostDance.ogg"
 
 var isDragged: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	audioStreamPlayer.stream = AudioStreamOggVorbis.load_from_file(audioPath)
-	endPosition = audioStreamPlayer.stream.get_length()
-	print(endPosition)
-	soundProgressBar.max_value = endPosition
+	set_audio(audioPath)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -45,6 +42,10 @@ func _on_sound_progress_bar_drag_ended(value_changed: bool) -> void:
 	curPosition = soundProgressBar.value
 	_seek(curPosition)
 
-
 func _on_sound_progress_bar_drag_started() -> void:
 	isDragged = true
+
+func set_audio(path: String) -> void:
+	audioStreamPlayer.stream = AudioStreamOggVorbis.load_from_file(path)
+	endPosition = audioStreamPlayer.stream.get_length()
+	soundProgressBar.max_value = endPosition

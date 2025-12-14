@@ -46,6 +46,6 @@ func _on_sound_progress_bar_drag_started() -> void:
 	isDragged = true
 
 func set_audio(path: String) -> void:
-	audioStreamPlayer.stream = AudioStreamOggVorbis.load_from_file(path)
+	audioStreamPlayer.stream = load(path)
 	endPosition = audioStreamPlayer.stream.get_length()
 	soundProgressBar.max_value = endPosition

@@ -53,6 +53,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="QuestionPicture" type="TextureRect" parent="Question"]
+custom_minimum_size = Vector2(800, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -67,6 +68,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+expand_mode = 1
 stretch_mode = 5
 
 [node name="Answer" type="Control" parent="."]
@@ -76,6 +78,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="AnswerPicture" type="TextureRect" parent="Answer"]
+custom_minimum_size = Vector2(800, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -90,6 +93,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+expand_mode = 1
 stretch_mode = 5
 
 [node name="AnswerLabel" type="Label" parent="Answer"]

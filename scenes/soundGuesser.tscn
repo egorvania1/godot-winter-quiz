@@ -88,9 +88,11 @@ grow_vertical = 2
 alignment = 1
 
 [node name="AnswerPicture" type="TextureRect" parent="Answer/VBoxContainer"]
+custom_minimum_size = Vector2(800, 400)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+expand_mode = 1
 stretch_mode = 5
 
 [node name="AnswerLabel" type="Label" parent="Answer/VBoxContainer"]

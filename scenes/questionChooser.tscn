@@ -46,7 +46,7 @@ alignment = 1
 layout_mode = 2
 theme = ExtResource("2_lo5i7")
 
-[node name="Topic1" type="Button" parent="QuestionGrid/ButtonGroup/VBoxContainer/MarginContainer"]
+[node name="Topic1" type="Button" parent="QuestionGrid/ButtonGroup/VBoxContainer/MarginContainer" groups=["Buttons"]]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme = ExtResource("3_i6fmf")
@@ -119,7 +119,7 @@ alignment = 1
 layout_mode = 2
 theme = ExtResource("2_lo5i7")
 
-[node name="Topic2" type="Button" parent="QuestionGrid/ButtonGroup2/VBoxContainer/MarginContainer"]
+[node name="Topic2" type="Button" parent="QuestionGrid/ButtonGroup2/VBoxContainer/MarginContainer" groups=["Buttons"]]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme = ExtResource("3_i6fmf")
@@ -192,7 +192,7 @@ alignment = 1
 layout_mode = 2
 theme = ExtResource("2_lo5i7")
 
-[node name="Topic3" type="Button" parent="QuestionGrid/ButtonGroup3/VBoxContainer/MarginContainer"]
+[node name="Topic3" type="Button" parent="QuestionGrid/ButtonGroup3/VBoxContainer/MarginContainer" groups=["Buttons"]]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme = ExtResource("3_i6fmf")
@@ -265,7 +265,7 @@ alignment = 1
 layout_mode = 2
 theme = ExtResource("2_lo5i7")
 
-[node name="Topic4" type="Button" parent="QuestionGrid/ButtonGroup4/VBoxContainer/MarginContainer"]
+[node name="Topic4" type="Button" parent="QuestionGrid/ButtonGroup4/VBoxContainer/MarginContainer" groups=["Buttons"]]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme = ExtResource("3_i6fmf")
@@ -338,7 +338,7 @@ alignment = 1
 layout_mode = 2
 theme = ExtResource("2_lo5i7")
 
-[node name="Topic5" type="Button" parent="QuestionGrid/ButtonGroup5/VBoxContainer/MarginContainer"]
+[node name="Topic5" type="Button" parent="QuestionGrid/ButtonGroup5/VBoxContainer/MarginContainer" groups=["Buttons"]]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme = ExtResource("3_i6fmf")

@@ -7,13 +7,18 @@ var questionsData : Dictionary
 const pictureScene: PackedScene = preload("res://scenes/pictureGuesser.tscn")
 const soundScene: PackedScene = preload("res://scenes/soundGuesser.tscn")
 const textScene: PackedScene = preload("res://scenes/textGuesser.tscn")
+var buttons: Array[Node]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	questionsData = load_json_file(json_path)
-	
+	buttons = get_tree().get_nodes_in_group("Buttons")
+	for button in buttons:
+		button.pressed.connect(_on_question_pressed.bind(button))
 
-func _on_question_pressed(questionName: String) -> void:
+func _on_question_pressed(button: Button) -> void:
+	button.disabled = true
+	var questionName = button.name
 	var questionData : Dictionary = questionsData[questionName]
 	var questionType = questionData["type"]
 	

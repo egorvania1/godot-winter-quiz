@@ -17,8 +17,11 @@ func _ready() -> void:
 		button.pressed.connect(_on_question_pressed.bind(button))
 
 func _on_question_pressed(button: Button) -> void:
-	button.disabled = true
 	var questionName = button.name
+	if questionName not in questionsData:
+		return
+		
+	button.disabled = true
 	var questionData : Dictionary = questionsData[questionName]
 	var questionType = questionData["type"]
 	

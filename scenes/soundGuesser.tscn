@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://kkcic87f66oo"]
+[gd_scene load_steps=8 format=3 uid="uid://kkcic87f66oo"]
 
 [ext_resource type="Script" uid="uid://b1b5gnwklm054" path="res://scripts/sound_guesser.gd" id="1_5u8d4"]
 [ext_resource type="Theme" uid="uid://bgak8h42a8hrb" path="res://themes/topic_label.tres" id="2_sisxj"]
 [ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="3_jr3jv"]
 [ext_resource type="PackedScene" uid="uid://b7isqm62vt2ug" path="res://scenes/audioPlayer.tscn" id="4_sisxj"]
 [ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="5_6a6hh"]
+[ext_resource type="Texture2D" uid="uid://hawpot1cjarq" path="res://data/sample/AnswerPic.png" id="5_jr3jv"]
+[ext_resource type="Theme" uid="uid://dxheqrdxoylp7" path="res://themes/generic_label.tres" id="5_sisxj"]
 
 [node name="SoundGuesser" type="Control"]
 layout_mode = 3
@@ -92,11 +94,14 @@ custom_minimum_size = Vector2(800, 400)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+texture = ExtResource("5_jr3jv")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="AnswerLabel" type="Label" parent="Answer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("5_sisxj")
+text = "Answer"
 horizontal_alignment = 1
 
 [node name="Show" type="CheckButton" parent="."]

@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d03icu8fmqonh"]
+[gd_scene load_steps=7 format=3 uid="uid://d03icu8fmqonh"]
 
 [ext_resource type="Script" uid="uid://befjvqkg8b48t" path="res://scripts/text_guesser.gd" id="1_0sxow"]
 [ext_resource type="Theme" uid="uid://bgak8h42a8hrb" path="res://themes/topic_label.tres" id="2_7ft1f"]
 [ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="3_tl2f3"]
+[ext_resource type="Theme" uid="uid://dxheqrdxoylp7" path="res://themes/generic_label.tres" id="4_0sxow"]
+[ext_resource type="Texture2D" uid="uid://hawpot1cjarq" path="res://data/sample/AnswerPic.png" id="5_7ft1f"]
 [ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="5_u8nur"]
 
 [node name="TextGuesser" type="Control"]
@@ -39,44 +41,72 @@ theme = ExtResource("3_tl2f3")
 text = "Difficulty"
 
 [node name="Question" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Quote" type="Label" parent="Question"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-
-[node name="Answer" type="Control" parent="."]
-visible = false
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="AnswerPicture" type="TextureRect" parent="Answer"]
-custom_minimum_size = Vector2(800, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 613.0
-offset_top = 314.0
-offset_right = 713.0
-offset_bottom = 414.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Quote" type="Label" parent="Question"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_0sxow")
+horizontal_alignment = 1
+
+[node name="Answer" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Answer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -63.5
+offset_right = 50.0
+offset_bottom = 63.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="AnswerPicture" type="TextureRect" parent="Answer/VBoxContainer"]
+custom_minimum_size = Vector2(800, 400)
+layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+texture = ExtResource("5_7ft1f")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="AnswerLabel" type="Label" parent="Answer"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="AnswerLabel" type="Label" parent="Answer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_0sxow")
+text = "Answer"
 horizontal_alignment = 1
 
 [node name="Show" type="CheckButton" parent="."]

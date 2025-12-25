@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://4hy18r1kejqx"]
+[gd_scene load_steps=8 format=3 uid="uid://4hy18r1kejqx"]
 
 [ext_resource type="Theme" uid="uid://bgak8h42a8hrb" path="res://themes/topic_label.tres" id="1_4xxo3"]
 [ext_resource type="Script" uid="uid://d02aemsshm26f" path="res://scripts/picture_guesser.gd" id="1_t7y4m"]
 [ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="2_t7y4m"]
+[ext_resource type="Texture2D" uid="uid://fbnl1qut535e" path="res://data/sample/QuestionPic.png" id="4_0o4vd"]
+[ext_resource type="Theme" uid="uid://dxheqrdxoylp7" path="res://themes/generic_label.tres" id="4_hsaap"]
+[ext_resource type="Texture2D" uid="uid://hawpot1cjarq" path="res://data/sample/AnswerPic.png" id="5_7x4mq"]
 [ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="5_hsaap"]
 
 [node name="PictureGuesser" type="Control"]
@@ -53,7 +56,37 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="QuestionPicture" type="TextureRect" parent="Question"]
-custom_minimum_size = Vector2(800, 400)
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -214.0
+offset_right = 500.0
+offset_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture = ExtResource("4_0o4vd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Answer" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 132.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Answer"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -61,45 +94,26 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -50.0
-offset_top = -50.0
+offset_top = -63.5
 offset_right = 50.0
-offset_bottom = 50.0
+offset_bottom = 63.5
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
+
+[node name="AnswerPicture" type="TextureRect" parent="Answer/VBoxContainer"]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+texture = ExtResource("5_7x4mq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Answer" type="Control" parent="."]
-visible = false
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="AnswerPicture" type="TextureRect" parent="Answer"]
-custom_minimum_size = Vector2(800, 400)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 613.0
-offset_top = 314.0
-offset_right = 713.0
-offset_bottom = 414.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-expand_mode = 1
-stretch_mode = 5
-
-[node name="AnswerLabel" type="Label" parent="Answer"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="AnswerLabel" type="Label" parent="Answer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_hsaap")
+text = "Answer"
 horizontal_alignment = 1
 
 [node name="Show" type="CheckButton" parent="."]

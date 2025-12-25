@@ -26,7 +26,7 @@ func _on_question_pressed(questionName: String) -> void:
 			newQuestion.soundPath = questionData["soundPath"]
 		"picture":
 			newQuestion = pictureScene.instantiate()
-			newQuestion.picturePath = questionData["picturePath"]
+			newQuestion.questionPicturePath = questionData["picturePath"]
 		"text":
 			newQuestion = textScene.instantiate()
 			newQuestion.quote = questionData["quote"]

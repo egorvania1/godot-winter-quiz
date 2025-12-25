@@ -13,8 +13,8 @@ var answer = "Here is the answer"
 func _ready() -> void:
 	$Header/Topic.text = questionName
 	$Header/Difficulty.text = questionDifficulty
-	var answerImage = Image.load_from_file(answerPicPath)
-	$Answer/VBoxContainer/AnswerPicture.texture = ImageTexture.create_from_image(answerImage)
+	var answerImage = load(answerPicPath)
+	$Answer/VBoxContainer/AnswerPicture.texture = answerImage
 	$Answer/VBoxContainer/AnswerLabel.text = answer
 	
 	$Close.pressed.connect(_on_close_pressed)

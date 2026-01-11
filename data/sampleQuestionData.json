@@ -1,0 +1,242 @@
+{
+  "Question1": {
+	"type": "sound",
+	"name": "Откуда песня?",
+	"difficulty": "Чайник",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question2": {
+	"type": "sound",
+	"name": "Откуда песня?",
+	"difficulty": "Изи",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question3": {
+	"type": "sound",
+	"name": "Откуда песня?",
+	"difficulty": "Потно",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question4": {
+	"type": "sound",
+	"name": "Откуда песня?",
+	"difficulty": "Геймер",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question5": {
+	"type": "sound",
+	"name": "Откуда песня?",
+	"difficulty": "Нёрд 🤓",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question6": {
+	"type": "sound",
+	"name": "Откуда звук?",
+	"difficulty": "Чайник",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question7": {
+	"type": "sound",
+	"name": "Откуда звук?",
+	"difficulty": "Изи",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question8": {
+	"type": "sound",
+	"name": "Откуда звук?",
+	"difficulty": "Потно",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question9": {
+	"type": "sound",
+	"name": "Откуда звук?",
+	"difficulty": "Геймер",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question10": {
+	"type": "sound",
+	"name": "Откуда звук?",
+	"difficulty": "Нёрд 🤓",
+	"soundPath": "res://data/sample/GhostDance.ogg",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question11": {
+	"type": "picture",
+	"name": "Откуда скрин?",
+	"difficulty": "Чайник",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question12": {
+	"type": "picture",
+	"name": "Откуда скрин?",
+	"difficulty": "Изи",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question13": {
+	"type": "picture",
+	"name": "Откуда скрин?",
+	"difficulty": "Потно",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question14": {
+	"type": "picture",
+	"name": "Откуда скрин?",
+	"difficulty": "Геймер",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question15": {
+	"type": "picture",
+	"name": "Откуда скрин?",
+	"difficulty": "Нёрд 🤓",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question16": {
+	"type": "text",
+	"name": "Откуда цитата?",
+	"difficulty": "Чайник",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Question17": {
+	"type": "text",
+	"name": "Откуда цитата?",
+	"difficulty": "Изи",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Question18": {
+	"type": "text",
+	"name": "Откуда цитата?",
+	"difficulty": "Потно",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Question19": {
+	"type": "text",
+	"name": "Откуда цитата?",
+	"difficulty": "Геймер",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Question20": {
+	"type": "text",
+	"name": "Откуда цитата?",
+	"difficulty": "Нёрд 🤓",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Question21": {
+	"type": "picture",
+	"name": "Сюрприз 1",
+	"difficulty": "Чайник",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question22": {
+	"type": "picture",
+	"name": "Сюрприз 2",
+	"difficulty": "Изи",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question23": {
+	"type": "picture",
+	"name": "Сюрприз 3",
+	"difficulty": "Потно",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question24": {
+	"type": "picture",
+	"name": "Сюрприз 4",
+	"difficulty": "Геймер",
+	"picturePath": "res://data/sample/QuestionPic.png",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Ответ."
+  },
+  "Question25": {
+	"type": "text",
+	"name": "Сюрприз 5",
+	"difficulty": "Нёрд 🤓",
+	"quote": "Фраза",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "Фраза ответ"
+  },
+  "Topic1": {
+	"type": "text",
+	"name": "???",
+	"difficulty": "???",
+	"quote": "???",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "???"
+  },
+  "Topic2": {
+	"type": "text",
+	"name": "???",
+	"difficulty": "???",
+	"quote": "???",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "???"
+  },
+  "Topic3": {
+	"type": "text",
+	"name": "???",
+	"difficulty": "???",
+	"quote": "???",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "???"
+  },
+  "Topic4": {
+	"type": "text",
+	"name": "???",
+	"difficulty": "???",
+	"quote": "???",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "???"
+  },
+  "Topic5": {
+	"type": "text",
+	"name": "???",
+	"difficulty": "???",
+	"quote": "???",
+	"answerPicPath": "res://data/sample/AnswerPic.png",
+	"answer": "???"
+  },
+}

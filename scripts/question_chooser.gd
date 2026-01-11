@@ -1,6 +1,6 @@
 extends Control
 
-var json_path : String = "res://data/questionData.json"
+@export var json_path : String = "res://data/questionData.json"
 var questionsData : Dictionary
 @onready var questionGrid = $QuestionGrid
 

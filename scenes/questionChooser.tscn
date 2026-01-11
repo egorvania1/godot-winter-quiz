@@ -14,6 +14,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7fb15")
+json_path = "res://data/sampleQuestionData.json"
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1

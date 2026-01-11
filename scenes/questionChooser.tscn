@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dbrnxmu2kx5sc" path="res://scripts/question_chooser.gd" id="1_7fb15"]
 [ext_resource type="Theme" uid="uid://b0b88ay2e2xwb" path="res://themes/column_margin.tres" id="1_lo5i7"]
 [ext_resource type="Theme" uid="uid://7glkox5rb0dc" path="res://themes/row_margin.tres" id="2_lo5i7"]
-[ext_resource type="Texture2D" uid="uid://dd3dvhdbxk8sp" path="res://data/pictures/background.png" id="2_sdkwo"]
+[ext_resource type="Texture2D" uid="uid://cia6474oj2ano" path="res://data/pictures/background.jpg" id="2_sdkwo"]
 [ext_resource type="Theme" uid="uid://dg52gef8blq08" path="res://themes/button_theme.tres" id="3_i6fmf"]
 
 [node name="QuestionChooser" type="Control"]
@@ -398,3 +398,8 @@ layout_mode = 2
 theme = ExtResource("3_i6fmf")
 text = "Нёрд 🤓
 10"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
